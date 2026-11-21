@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/cvr-dk",
   "title": "Cvr Dk",
-  "description": "CVR — Det Centrale Virksomhedsregister (Danish Central Business Register) MCP.",
-  "version": "0.1.0",
+  "description": "CVR (Det Centrale Virksomhedsregister), the Danish Central Business Register, published by…",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/cvr-dk",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-cvr-dk",

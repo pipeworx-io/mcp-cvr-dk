@@ -1,0 +1,34 @@
+[
+  {
+    "name": "lookup_company",
+    "description": "Look up a Danish company in the official CVR register (Erhvervsstyrelsen, Det Centrale Virksomhedsregister) by company name or 8-digit CVR number. Returns the single best-match record: name, vat (CVR number), address, zipcode, city, phone, email, employees, industrycode/industrydesc, companycode/companydesc (company form, e.g. A/S), startdate, enddate, status, productionunits. No match returns found:false. e.g. {query:\"novo nordisk\"} or {query:\"24256790\"}.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Company name or 8-digit CVR number. e.g. \"novo nordisk\" or \"24256790\"."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "lookup_by_vat",
+    "description": "Look up a Danish company by its explicit 8-digit CVR/VAT number in the CVR register (Erhvervsstyrelsen). Same fields as lookup_company. e.g. {vat:\"24256790\"} (Novo Nordisk A/S).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "vat": {
+          "type": "string",
+          "description": "8-digit Danish CVR number, e.g. \"24256790\"."
+        }
+      },
+      "required": [
+        "vat"
+      ]
+    }
+  }
+]
